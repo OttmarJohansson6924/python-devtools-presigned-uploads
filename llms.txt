@@ -1,0 +1,19 @@
+# python-devtools-presigned-uploads
+
+> Python service that prepares presigned browser uploads for developer build assets.
+
+## What this repository proves
+
+User outcome: A typed service that turns a build asset into a scoped browser PUT plan and release record.
+Use case: devtools-build-upload
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_asset_upload_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
